@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled(Link)`
-  width: 100px;
+  width: auto;
   height: 100px;
 
   position: fixed;
@@ -33,4 +33,3 @@ export const Content = styled(Link)`
     font-size: 2rem;
   }
 `;
-
