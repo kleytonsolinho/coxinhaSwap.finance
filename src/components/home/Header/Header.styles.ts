@@ -14,7 +14,7 @@ export const Navbar = styled.nav`
   padding: 0 2rem;
 
   position: fixed;
-  top: 25px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%);
   z-index: 99;
