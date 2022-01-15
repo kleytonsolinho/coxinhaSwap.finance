@@ -1,3 +1,5 @@
+import Button from '../../global/Form/Button/Button';
+
 import imgLogo from '../../../assets/images/logo-new.png';
 
 import {
@@ -34,7 +36,7 @@ export default function Header() {
             NFT
           </MenuItem>
         </Menu>
-        <Connect>Connect Wallet</Connect>
+        <Button>Connect Wallet</Button>
       </Navbar>
     </Container>
   );
