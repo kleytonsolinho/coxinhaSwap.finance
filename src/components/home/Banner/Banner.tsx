@@ -1,16 +1,6 @@
-import { CgScrollV } from 'react-icons/cg';
-import { BsMouse } from 'react-icons/bs';
-
 import imgBanner from '../../../assets/images/ampulheta.png';
 
-import {
-  Container,
-  Left,
-  Title,
-  Description,
-  Right,
-  ScrollDown,
-} from './Banner.styles';
+import { Container, Left, Title, Description, Right } from './Banner.styles';
 
 export default function Banner() {
   return (
@@ -25,10 +15,6 @@ export default function Banner() {
       <Right>
         <img src={imgBanner} alt="Banner" />
       </Right>
-      <ScrollDown to="/" smooth>
-        <CgScrollV className="icon" />
-        <BsMouse className="icon" />
-      </ScrollDown>
     </Container>
   );
 }
