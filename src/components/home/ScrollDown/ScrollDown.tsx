@@ -1,18 +1,15 @@
 import { CgScrollV } from 'react-icons/cg';
 import { BsMouse } from 'react-icons/bs';
 
-import {
-  Container,
-  Content,
-} from './ScrollDown.styles';
+import { Container, ScrollClick } from './ScrollDown.styles';
 
-export default function ScrollDown(){
+export default function ScrollDown() {
   return (
     <Container>
-      <Content to="/" smooth>
+      <ScrollClick to="/" smooth>
         <CgScrollV className="icon" />
         <BsMouse className="icon" />
-      </Content>
+      </ScrollClick>
     </Container>
   );
 }

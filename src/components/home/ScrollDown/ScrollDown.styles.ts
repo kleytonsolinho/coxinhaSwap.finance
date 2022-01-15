@@ -8,7 +8,7 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Content = styled(Link)`
+export const ScrollClick = styled(Link)`
   width: auto;
   height: 100px;
 
