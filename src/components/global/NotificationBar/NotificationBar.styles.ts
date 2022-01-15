@@ -8,7 +8,25 @@ export const Container = styled.aside`
   left: 0;
   top: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   background-color: #3fffc2;
+
+  button {
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
 `;
 
 export const Content = styled.div`

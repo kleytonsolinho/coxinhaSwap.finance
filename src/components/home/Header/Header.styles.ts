@@ -1,20 +1,27 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
+interface NavbarProps {
+  notifyIsOpen: boolean;
+}
+
 export const Container = styled.header`
   width: 100%;
   height: auto;
   position: relative;
 `;
 
-export const Navbar = styled.nav`
+export const Navbar =
+  styled.nav <
+  NavbarProps >
+  `
   width: calc(100% - 4rem);
   max-width: 1400px;
   height: var(--menu-height);
   padding: 0 2rem;
 
   position: fixed;
-  top: 40px;
+  top: ${({ notifyIsOpen }) => (notifyIsOpen ? '40px' : '25px')};
   left: 50%;
   transform: translate(-50%);
   z-index: 99;

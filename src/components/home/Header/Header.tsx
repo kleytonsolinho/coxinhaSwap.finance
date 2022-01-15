@@ -1,20 +1,23 @@
+import { useNavigate } from 'react-router-dom';
+import { useApp } from '../../../hooks/useApp';
+
 import Button from '../../global/Form/Button/Button';
 
 import imgLogo from '../../../assets/images/logo-new.png';
 
-import {
-  Container,
-  Navbar,
-  Logo,
-  Menu,
-  MenuItem,
-  Connect,
-} from './Header.styles';
+import { Container, Navbar, Logo, Menu, MenuItem } from './Header.styles';
 
 export default function Header() {
+  const { notificationBarIsOpen } = useApp();
+  const navigate = useNavigate();
+
+  const handleConnect = () => {
+    navigate('/dashboard');
+  };
+
   return (
     <Container>
-      <Navbar>
+      <Navbar notifyIsOpen={notificationBarIsOpen}>
         <Logo to="/" smooth>
           <img src={imgLogo} alt="Logo CoxinhaSwap" />
           <h1>CoxinhaSwap</h1>
@@ -36,7 +39,9 @@ export default function Header() {
             NFT
           </MenuItem>
         </Menu>
-        <Button>Connect Wallet</Button>
+        <Button type="button" onClick={handleConnect}>
+          Connect Wallet
+        </Button>
       </Navbar>
     </Container>
   );
