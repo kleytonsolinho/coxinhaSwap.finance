@@ -6,7 +6,7 @@ import { Container, ScrollClick } from './ScrollDown.styles';
 export default function ScrollDown() {
   return (
     <Container>
-      <ScrollClick to="/" smooth>
+      <ScrollClick to="banner2" smooth>
         <CgScrollV className="icon" />
         <BsMouse className="icon" />
       </ScrollClick>

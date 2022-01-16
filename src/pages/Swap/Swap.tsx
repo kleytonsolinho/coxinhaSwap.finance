@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom';
 
 import Button from '../../components/global/Form/Button/Button';
 
-import { Main } from './Dashboard.styles';
+import { Main } from './Swap.styles';
 
-export default function Dashboard() {
+export default function Swap() {
   const navigate = useNavigate();
 
   const handleClickBack = () => {
@@ -14,7 +14,7 @@ export default function Dashboard() {
   return (
     <Main>
       <div>
-        <h1>Dashboard</h1>
+        <h1>Swap</h1>
         <Button onClick={handleClickBack}>Voltar</Button>
       </div>
     </Main>

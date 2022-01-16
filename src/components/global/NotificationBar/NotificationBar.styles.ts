@@ -7,6 +7,7 @@ export const Container = styled.aside`
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -26,6 +27,7 @@ export const Container = styled.aside`
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
+    color: var(--primary);
   }
 `;
 

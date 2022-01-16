@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.button`
+import { ButtonProps } from './Button.model';
+
+export const Container =
+  styled.button <
+  ButtonProps >
+  `
   width: auto;
   height: 40px;
 
@@ -12,10 +17,11 @@ export const Container = styled.button`
 
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
-  border: none;
   border-radius: 10px;
-  background-color: #fcaa05;
+
+  color: ${(props) => (props.secondary ? '#fcaa05' : '#ffffff')};
+  border: ${(props) => (props.secondary ? '2px solid #fcaa05' : 'none')};
+  background-color: ${(props) => (props.secondary ? 'transparent' : '#fcaa05')};
 
   animation: all 1s linear;
 

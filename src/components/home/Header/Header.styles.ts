@@ -48,7 +48,7 @@ export const Logo = styled(Link)`
 
   img {
     height: 75%;
-    transform: rotate(-30deg);
+    animation: movelogo 3s linear infinite;
   }
 
   h1 {
@@ -57,7 +57,7 @@ export const Logo = styled(Link)`
 `;
 
 export const Menu = styled.div`
-  width: 40%;
+  width: 30%;
   height: 100%;
 
   display: flex;
@@ -66,7 +66,46 @@ export const Menu = styled.div`
 `;
 
 export const MenuItem = styled(Link)`
+  padding: 8px 12px;
   cursor: pointer;
+
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #dfdfdf;
+  }
 `;
 
-export const Connect = styled.button``;
+export const ContainerWeb3 = styled.div`
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Price = styled.p`
+  padding: 8px;
+  margin-right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #dfdfdf;
+
+  img {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 5px;
+
+    transform: rotate(-35deg);
+  }
+`;

@@ -104,6 +104,24 @@ a {
   }
 }
 
+@keyframes movelogo {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
 @keyframes blink {
   from {
     opacity: 0;
