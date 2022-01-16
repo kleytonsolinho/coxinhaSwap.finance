@@ -4,14 +4,15 @@ interface AppProviderProps {
   children: React.ReactNode;
 }
 
-interface ContextProps {
-  modalIsOpen: boolean;
-  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  notificationBarIsOpen: boolean;
-  setNotificationBarIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// interface ContextProps {
+//   modalIsOpen: boolean;
+//   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+//   notificationBarIsOpen: boolean;
+//   setNotificationBarIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 
 // verificar tipagem context any
+// eslint-disable-next-line
 export const AppContext = createContext<any | null>(null);
 
 export function AppContextProvider({
